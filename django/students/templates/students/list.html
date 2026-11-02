@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+	<meta charset="UTF-8">
+	<title>Tələbələr</title>
+</head>
+<body>
+	<h1>Tələbələrin siyahısı</h1>
+	{% for student in students %}
+		<p>{{ student.first_name }} {{ student.last_name }}</p>
+	{% endfor %}
+</body>
+</html>
